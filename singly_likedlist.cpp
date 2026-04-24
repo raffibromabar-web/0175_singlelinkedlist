@@ -12,7 +12,7 @@ class LinkedList
 {
     Node *START;
 
-public:
+    public:
     LinkedList()
     {
         START = NULL;
@@ -57,4 +57,10 @@ public:
 
         nodeBaru->next = current;
         previous->next = nodeBaru;
+    }
+
+    bool ListEmpty()
+    {
+        return (START == NULL);
+    }
 };
